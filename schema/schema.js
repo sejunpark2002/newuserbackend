@@ -8,7 +8,8 @@ const userSchema = new mongoose.Schema({
   imageUrl: { type: String, required: [true, 'Please add id field'] },
   imagePath:{ type: String, required: [true, 'Please add id field'] },
   timeCreated:{ type: Number, required: [true, 'Please add id field'] },
-  timeCreated:{ type: String, required: [true, 'Please add id field'] },
+  role:{ type: String, required: [true, 'Please add id field'] },
+  gender:{ type: String, required: [true, 'Please add id field'] },
   
 })
 

@@ -27,8 +27,8 @@ export const deleteUser = async(req, res) => {
 }
 
 export const updateUser = async(req, res) => {
-  const {id,name,email,phone,imageUrl,imagePath,timeCreated} = req.body;
-  await userSchema.findOneAndUpdate({id},{name,email,phone,imageUrl,imagePath,timeCreated})
+  const {id,name,email,phone,gender,role,imageUrl,imagePath,timeCreated} = req.body;
+  await userSchema.findOneAndUpdate({id},{name,email,phone,gender,role,imageUrl,imagePath,timeCreated})
   res.json({ message: 'Succesfully upated', statusCode: 200 })
 }
 
