@@ -11,7 +11,7 @@ const connectMongoDB = async () => {
 
   console.log('Configuration Start');
   mongoose.set('strictQuery', false);
-  await mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.bfyavvg.mongodb.net/startup?retryWrites=true&w=majority&appName=Cluster0`)
+  await mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.bfyavvg.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0`)
 }
 connectMongoDB()
 .then(() => console.log('Successfully connected mongodb'))
