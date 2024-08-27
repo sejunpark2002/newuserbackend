@@ -31,7 +31,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(asdadad)
 
-app.use('/', userRouter)
+app.use('/api', userRouter)
 
 
 
