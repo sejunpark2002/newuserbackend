@@ -1,27 +1,13 @@
 
-<div align="center">
-  <a href="https://usermanagement-sjp.netlify.app/">
-    <img src="./src/images/userlogo.png" alt="Logo" width="70" height="70">
-  </a>
-</div>
+# User Management Backend
 
-# User Management
-
-The User Management App is a solution built using React for managing user-related tasks, including creating, updating, deleting, and retrieving user information
-
+The backend of the User Management App is built using Node.js and MongoDB, providingsolution for managing user-related tasks such as creating, updating, deleting, and retrieving user information.
 
 ## Features
 
-- Built on React + MUI
-- NodeJS + MongoDB for Backend
-- Global state management Redux
-- Create User
-- Edit User
-- Delete User
-- Analytics
- -- View a report of all the metrics regarding your usrs
-- Pagination of the list of users
-
+- RESTful API
+- NodeJS + MongoDB 
+- CRUD Operations
 
 ## Live Site
 
@@ -30,22 +16,29 @@ The User Management App is a solution built using React for managing user-relate
 
 ## Technologies Used
 
-- **React** 
-- **MUI** 
-- **Redux** 
-- **NodeJS** 
-- **useForm** 
+- **Node.js** 
+- **Express** 
+- **MongoDB** 
+- **Mongoose** 
+
+## API Endpoints
+
+- GET /api/users: Retrieve a list of users (with pagination support).
+- GET /api/users/:id: Retrieve details of a specific user by ID.
+- POST /api/users: Create a new user.
+- PUT /api/users/:id: Update an existing user by ID.
+- DELETE /api/users/:id: Delete a user by ID.
 
 ## Quick Start
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/sejunpark2002/newuserfront.git
+    git clone https://github.com/sejunpark2002/newuserbackend.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd newuserfront
+    cd newuserbackend
     ```
 
 3. Install dependencies:
@@ -57,8 +50,6 @@ The User Management App is a solution built using React for managing user-relate
     ```bash
     npm start
     ```
-
-5. Open your web browser and visit `http://localhost:3000` to access the application.
 
 ## License
 
